@@ -1,0 +1,41 @@
+#!/bin/bash
+
+#SBATCH --gpus=2
+#SBATCH --time 144:00:00
+#SBATCH --job-name vLLMv2
+
+# get enviroment
+eval "$(conda shell.bash hook)"
+conda activate vLLM
+
+#  Parámeters
+port=31200
+node=$(hostname -s)
+user=$(whoami)
+export MYMODEL=Qwen/Qwen2.5-3B-Instruct
+export MYMODEL_LEN=32768
+export MYPORT=${port}
+export MYHOST=$HOSTNAME
+#logging
+export LOGDIR=logs
+mkdir -p $LOGDIR
+echo "Running in $HOSTNAME"
+vllm serve $MYMODEL \
+    --max-model-len 32768 \
+    --gpu-memory-utilization 0.9 \
+    --port ${port} \
+    > $LOGDIR/vllm_server.log 2>&1 &
+
+# Waiting for port up
+until nc -z localhost $port; do
+    echo "Waiting for port $port..."
+    sleep 5
+done
+echo "Port $port... ready"
+
+
+uvicorn hybrid:app --host 0.0.0.0 --port 31300 > $LOGDIR/fastapi.log 2>&1
+
+echo "All launched...!" 
+
+# tail -f /dev/null
