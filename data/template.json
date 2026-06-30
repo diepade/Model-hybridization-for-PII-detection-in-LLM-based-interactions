@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "PERSON": "\n{\n        \"Name\": \"\",\n\t\t\"Birth_Date\": \"\",\n\t\t\"Age\": \"\",\n\t\t\"Height\": \"\",\n\t\t\"Weight\": \"\",\n\t\t\"Gender\": \"\",\n\t\t\"Marital_Status\": \"\",\n\t\t\"Number_of_Children\": \"\",\n\t\t\"Place_of_Birth\": \"\",\n\t\t\"Mother_Maiden_Name\": \"\",\n\t\t\"Sexual_Preference\": \"\",\n\t\t\"Sex_Life\": \"\"\n}\n",
+        "LOCATION": "\n{\n\t\t\"Home_Town_City\": \"\",\n\t\t\"Geographical_Indicators\": \"\",\n\t\t\"Geo_Location\": \"\",\n\t\t\"Country\": \"\",\n\t\t\"ZIP_Code\": \"\",\n\t\t\"Address\": \"\",\n\t\t\"Date_Time\": \"\"\n}\n\n",
+        "CONTACT": "\n{\n\t\t\"Home_Address\": {\n\t\t\t\"Street_Address\": \"\",\n\t\t\t\"City\": \"\",\n\t\t\t\"State\": \"\",\n\t\t\t\"ZIP_Code\": \"\",\n\t\t\t\"Country\": \"\"\n\t\t},\n\t\t\"Phone_Number\": \"\",\n\t\t\"Email_Address\": \"\",\n\t\t\"Family_Friend_Contact_Information\": \"\"\n}\n",
+        "IDENTIFIERS": "\n{\n    \"Personal_Identifiers\":{\n        \"National_ID\": \"\",\n\t\t\"Passport_Number\": \"\",\n\t\t\"Social_Security_Number\": \"\",\n        \"Vehicle_Registration\": \"\"\n    },  \n\t\"Online_Identifiers\": {\n\t\t\"Screen_Name\": \"\",\n\t\t\"Social_Network_Profile\": \"\",\n\t\t\"Social_Network_Activity\": \"\",\n\t\t\"URLs\": \"\",\n\t\t\"Online_Aliases\": \"\",\n        \"IPs\": \"\"\n\t}\n}\n",
+        "NRP": "\n{\n        \"Nationality_Citizenship\": \"\",\n        \"Race_Ethnic\": \"\",\n    \t\"Religion\": \"\",\n    \t\"Philosophical_Belief\": \"\",\n    \t\"Political_Affiliation\": \"\",\n    \t\"Trade_Union_Affiliation\": \"\"\n\n}\n",
+        "FINANCE": "\n{\n\t\t\"Banking_Details\": {\n\t\t\t\"Credit_Card_Number\": \"\",\n\t\t\t\"Credit_Score\": \"\",\n\t\t\t\"ABA_Routing_Number\": \"\",\n\t\t\t\"Bank_Account_Number\": \"\",\n\t\t\t\"Individual_Taxpayer_Identification\": \"\",\n\t\t\t\"SWIFT_Code\": \"\",\n\t\t\t\"Crypto\": \"\"\n\t\t},\n\t\t\"Invoice_Payments\": \"\",\n\t\t\"Financial_Information\": \"\"\n}\n",
+        "SECURITY": "\n{\n\t\t\"Digital_Signature\": \"\",\n\t\t\"Password\": \"\",\n\t\t\"License_Numbers\": {\n\t\t\t\"Drivers_License_Number\": \"\",\n\t\t\t\"Vehicle_Registration_Number\": \"\",\n\t\t\t\"License_Plate_Number\": \"\"\n\t\t},\n\t\t\"Biometric_Data\": {\n\t\t\t\"Fingerprint_Data\": \"\",\n\t\t\t\"Voice_Print\": \"\",\n\t\t\t\"Handwriting_Sample\": \"\",\n\t\t\t\"Physiological_Data\": \"\",\n\t\t\t\"Genetic_Data\": \"\",\n\t\t\t\"X_Ray\": \"\"\n\t\t}\n}\n",
+        "OTHERS": "\n{\n    \"Health_Information\": {\n\t\t\"Health_Insurance_ID\": \"\",\n\t\t\"Medical_History\": \"\",\n\t\t\"Physiological_Data\": \"\"\n\t},\n\t\"Cultural_and_Social_Identity\": {\n\t\t\"Cultural_Social_Identity\": \"\",\n\t\t\"Shopping_Behavior\": \"\",\n\t\t\"Survey_Answers\": \"\",\n\t\t\"Signed_Petitions\": \"\",\n\t\t\"Activities\": \"\",\n\t\t\"Law_Enforcement_Records\": \"\"\n\t},\n    \"Appearance\": {\n\t\t\"Picture_of_Face\": \"\",\n\t\t\"Distinguishing_Characteristic\": \"\"\n\t}\n}\n",
+        "WORK": "\n{\n\t\t\"Job_Title\": \"\",\n\t\t\"Occupation\": \"\",\n\t\t\"Work_ID\": \"\",\n\t\t\"Work_Address\": {\n\t\t\t\"Street_Address\": \"\",\n\t\t\t\"City\": \"\",\n\t\t\t\"State\": \"\",\n\t\t\t\"ZIP_Code\": \"\",\n\t\t\t\"Country\": \"\"\n\t\t},\n\t\t\"Work_Contact_Information\": {\n\t\t\t\"Work_Phone_Number\": \"\",\n\t\t\t\"Work_Email_Address\": \"\"\n\t\t},\n\t\t\"Employment_Information\": {\n\t\t\t\"Employment_Status\": \"\",\n\t\t\t\"Work_Experience\": \"\",\n\t\t\t\"Skills\": \"\",\n\t\t\t\"Education\": \"\"\n    \t},\n    \t\"Income_Level\": \"\"\n}\n"
+    },
+    "data": [
+        "Person",
+        "Location",
+        "Contact",
+        "Identifiers",
+        "NRP",
+        "Finance",
+        "Security",
+        "Work",
+        "Others"
+    ]
+}

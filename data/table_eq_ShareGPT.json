@@ -1,0 +1,89 @@
+{
+    "PERSON": {
+        "PERSON": [
+            "Name",
+            "Mother_Maiden_Name"
+        ],
+        "CONTACT": [
+            "Family_Friend_Contact_Information"
+        ]
+    },
+    "LOCATION": {
+        "PERSON": [
+            "Place_of_Birth"
+        ],
+        "LOCATION": [
+            "Home_Town_City",
+            "Country",
+            "Address"
+        ],
+        "CONTACT": {
+            "Home_Address": [
+                "Street_Address",
+                "City",
+                "State",
+                "Country"
+            ]
+        },
+        "WORK": {
+            "Work_Address": [
+                "Street_Address",
+                "City",
+                "State",
+                "Country"
+            ]
+        }
+    },
+    "EMAIL_ADDRESS": {
+        "CONTACT": [
+            "Email_Address"
+        ],
+        "WORK": {
+            "Work_Contact_Information": [
+                "Work_Email_Address"
+            ]
+        }
+    },
+    "DATE_TIME": {
+        "PERSON": [
+            "Birth_Date"
+        ],
+        "LOCATION": [
+            "Date_Time"
+        ]
+    },
+    "NRP": {
+        "NRP": [
+            "Nationality_Citizenship",
+            "Race_Ethnic",
+            "Religion",
+            "Political_Affiliation"
+        ]
+    },
+    "PASSPORT_NUMBER": {
+        "IDENTIFIERS": {
+            "Personal_Identifiers": [
+                "Passport_Number",
+                "National_ID"
+            ]
+        }
+    },
+    "PHONE_NUMBER": {
+        "CONTACT": [
+            "Phone_Number"
+        ],
+        "WORK": {
+            "Work_Contact_Information": [
+                "Work_Phone_Number"
+            ]
+        }
+    },
+    "URL": {
+        "IDENTIFIERS": {
+            "Online_Identifiers": [
+                "URLs",
+                "IPs"
+            ]
+        }
+    }
+}
